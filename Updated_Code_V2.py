@@ -1947,3 +1947,6 @@ if __name__ == "__main__":
                 st.write(Gen_Ans)
                 full_response += Gen_Ans
             st.session_state.messages.append({"role": "assistant", "content": full_response, "is_html": True})
+    if.st.button("New Chat"):
+        st.session_state['messages'] = []
+        st.experimental_rerun()
